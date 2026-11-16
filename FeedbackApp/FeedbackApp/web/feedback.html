@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Application</title>
+</head>
+
+<body>
+
+<h1>Feedback Form</h1>
+
+<form action="submitFeedback" method="POST">
+
+    <label>Name:</label><br>
+    <input type="text" name="name" required>
+    <br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required>
+    <br><br>
+
+    <label>Feedback Type:</label><br>
+
+    <select name="feedbackType">
+        <option value="Complaint">Complaint</option>
+        <option value="Suggestion">Suggestion</option>
+        <option value="Compliment">Compliment</option>
+    </select>
+
+    <br><br>
+
+    <label>Comments:</label><br>
+    <textarea name="comments" rows="5" cols="30"
+              required></textarea>
+
+    <br><br>
+
+    <button type="submit">Submit Feedback</button>
+
+</form>
+
+</body>
+</html>
